@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/**   CLOSE LOADER   **/
+#container{
+    z-index: 1000000000000000000000000000;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    background: #222;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.closeloader{
+    transform: translateY(-100%);
+    transition: all 0.5s;
+}
+
+.closeloader svg{
+     transform: translateY(-400%);
+    transition: all 2s;
+}
+
+/**   ANIMATION SVG   **/
+path{
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 5s cubic-bezier(0,0.23,1,.1);
+}
+
+svg{
+    position: absolute;
+    padding-left: 30%;
+    padding-top: 10%;
+    height: 40%;
+    width: 40%;
+}
+
+ @keyframes animate{
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+    30%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 960;
+    }
+    50%{
+        fill: rgba(255,255,255,0);       
+    }   
+    100%{
+        opacity: 10;
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+    }
+}
+
+/**   TEXTE QUI APPARAIT   **/
+
+body{
+      overflow: hidden;
+}
+
+.body{
+      overflow-y: visible;
+}
+
+.blinking{
+      position: absolute;
+      display: block;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 5%;
+}
+
+.blinking p{
+      font-size: 2.47vw;
+      font-family: "Anonymous Pro";
+      color: #BDBDBD;
+      border-right: 4px solid #fff;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 100%;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}     
+
+

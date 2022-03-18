@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: #666;
+    background: url("../images/wallpaper/tintin44.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+}
+
+#message-chat-right{
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    word-wrap:break-word;
+}
+
+#message-chat-left{
+    border: 2px solid #990000;
+    background-color: #ffcccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    word-wrap:break-word;
+}
+
+#message-chat-right::after, #message-chat-left::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#message-chat-right img.left ,#message-chat-left img.right {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+#message-chat-left img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.pseudo{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#chat{
+    height: 80%;
+    overflow-x: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#content{
+    background: #3d3d3d;
+    border: 0.5em solid #ccc;
+    border-radius: 10px;
+    max-width: 800px;
+    position: relative;
+    top: 90px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+input[type='submit']{
+    display: block;
+    background: white;
+    border-bottom: 0.2em solid #910202;
+    border-top: 0.2em solid #910202;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-family: "Alegreya Sans";
+    font-size: 1vw;
+    margin-top: 1%;
+    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#910202; 
+}
+
+textarea{
+    font-family: "Alegreya Sans";
+    font-size: 0.8vw;
+    color: #666;
+    font-weight: normal;
+    width: 100%;
+    margin-top: 1%;
+    padding: 2%;
+}
+
+input, textarea{
+    margin-bottom: 3px;
+}

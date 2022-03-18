@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #666;
+	background: url("../images/wallpaper/tintin44.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center; 
+}
+
+.login-box{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	border: 8px solid #ccc;
+	border-radius: 10px;
+	background-color: #3d3d3d;
+	font-family: "Alegreya Sans";
+	z-index: 100;
+	width: 30%;
+	color: white;
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+
+.login-box h1{
+	font-size: 2vw;
+	border-bottom: 6px solid #910202;
+	margin-bottom: 50px;
+	padding: 13px 0;
+}
+
+.textbbox{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 3px solid #910202;
+}
+
+.textbbox input{
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size: 1vw;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+}
+
+.btn{
+	width: 100%;
+	background: none;
+	border: 3px solid #910202;
+	border-radius: 20px;
+	color: white;
+	padding: 5px;
+	font-size: 1vw;
+	cursor: pointer;
+	margin: 12px 0;
+}
+
+input[type=radio]{
+	width: 10px;
+}
+
+.h, .f{
+	width: 50%;
+}

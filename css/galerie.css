@@ -1,0 +1,62 @@
+.tintin{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #666;
+		background: url("../images/wallpaper/tintin44.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	 background-position: center; 
+}
+
+.galerie{
+	top: 0;
+	font-size: 0;
+	display: -ms-flexbox;
+	-ms-flexbox-wrap: wrap;
+	-ms-flexbox-direction: column;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	display: -webkit-box;
+	display: flex;
+}
+
+.galerie div{
+	-webkit-box-flex: auto;
+	-ms-flex: auto;
+	flex: auto;
+	width: 25%;
+	margin: .5vw;
+}
+
+.galerie div img{
+	width: 100%;
+	height: auto;
+	filter: sepia(75%);
+}
+
+.galerie div img:hover {
+    transform: scale(1.2);
+    z-index: 100;
+    box-shadow: 0 0 20px black;
+    transition: 0.6s;
+    filter: sepia(0%);
+}
+
+@media screen and (max-width: 400px){
+	.galerie div{
+		margin: 0;
+	}
+
+	.galerie{
+		padding: 0;
+	}
+}

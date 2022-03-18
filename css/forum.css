@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+@font-face{
+  font-family: "Open Sans";
+  src: url(../../obj/polices/OpenSans-Bold.ttf);
+}
+
+
+body{
+	background: #666;
+/**	background: url("../images/wallpaper/tintin44.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center; **/
+}
+
+.gauche {
+	width: calc(70% - 0.25em - 0.25em);
+	max-width: calc(70% - 0.25em - 0.25em);
+	word-wrap:break-word;
+	padding: 2% 2% 2% 2%; 
+}
+
+.droite, .middle {
+	background-color: white;
+	border-left: 0.25em solid #666;
+	text-align: center;
+	max-width: 15%;
+	width: 15%;
+	word-wrap:break-word;
+	display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.sujetmenu, .categories{
+	display: flex;
+}
+
+.date{
+	font-size: 0.75vw;
+	font-family: "Open Sans";
+}
+
+.droite .subtitle, .middle .subtitle{
+	font-size: 1vw;
+	font-family: "Alegreya Sans";
+	font-weight:bold;
+}
+
+
+.categories, .sujetmenu {
+	border: .2em solid #910202;
+    background-color: #ccc;
+    border-radius: 0.4em;
+	margin: auto; 
+	margin-top: 1%;
+	width: calc(100% - 6% - 2*0.2em); 
+}
+.categories a, .sujetmenu a{
+	text-decoration: none;
+	color: black;
+	font-family: "Alegreya Sans";
+	font-size: 1.5vw;
+	border-bottom: 0.1em solid black;
+}
+
+.categories a:hover, .sujetmenu a:hover{
+	color : #910202;
+	border-bottom: 0.1em solid #910202;
+	transition: 0.4s;
+}
+
+.post{
+	border: .2em solid #999;
+    background-color: white;
+    border-radius: 0.4em;
+	margin: auto; 
+	margin-top: 1%;
+	width: calc(100% - 6% - 2*0.2em); 
+	padding: 2%; 
+	margin-left: 1%;
+}
+
+.post .pseudo{
+	font-family: "Alegreya Sans";
+	font-size: 1vw;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.post .message{
+	font-family: Helvetica;
+	font-size: 0.8vw;
+	font-weight: normal;
+	word-wrap:break-word;
+}
+
+
+.nomsujet, .nomcategorie{
+	font-family: "Alegreya Sans";
+	text-transform: uppercase;
+	border-bottom: 0.2em solid #000;
+	border-top: 0.2em solid #000;
+	text-align: center;
+	color: white;
+	background-color: #888;
+	stroke: black;
+	font-size: 1.3vw;	
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	word-wrap:break-word;
+}
+
+#forum > form textarea, .inputsujetname{
+	font-family: Helvetica;
+	font-size: 0.8vw;
+	font-weight: normal;
+	width: calc(100% - 2% - 2*0.3em);
+	margin-left: 2%;
+	margin-top: 1%;
+	border: .4em solid black;
+	border-radius: 0.3em;
+	padding: 2%;
+}
+
+#forum > form > input, #forum > a, #forum .sendsujet{
+	display: block;
+	background: white;
+	border-bottom: 0.2em solid #910202;
+	border-top: 0.2em solid #910202;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+	font-family: "Alegreya Sans";
+	font-size: 1vw;
+	margin-top: 1%;
+	width: 100%;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#910202; 
+}
+
+.erreur{
+	text-align: center;
+	font-size: 1vw;
+	color: red;
+	text-decoration: underline;
+}

@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #666;
+    background: url("../images/wallpaper/tintin44.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+}
+
+.video {
+    list-style-type: none;
+    text-align: center;
+}
+ 
+.video div {
+    display: inline-block;
+    margin: 70px;
+    width: 30%;
+}
+ 
+.video div iframe {
+    width: 100%;
+    height: 50%;
+    transition: 0.5s;
+    border: 6px solid black;
+}
+ 
+.video div iframe:hover {
+    transform: scale(1.5);
+    z-index: 100;
+    box-shadow: 0 0 20px black;
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+@font-face{
+  font-family: "Open Sans";
+  src: url(../../obj/polices/OpenSans-Bold.ttf);
+}
+
+body, html{
+	background: #666;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../images/wallpaper/tintin44.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center; 
+}
+
+.tintin{
+	min-width: 100%;
+  min-height: 100%;
+	z-index: 1;
+	top: 0;
+	box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+}
+
+.wrapper{
+	margin: 50px auto;
+	font-weight: 400;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+}
+
+.wrapper button.accordion{
+	text-align: center;
+	background: #DD1C1A;
+	color: #fff;
+	cursor: pointer;
+	border: 0px;
+	padding: 18px;
+	width: 100%;
+	font-size: 18px;
+	transition: .4s;
+	box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+}
+
+.wrapper button:focus{
+	outline: none;
+}
+
+.wrapper button.accordion.active, .wrapper button.accordion:hover{
+	background: #9B0A07;
+}
+
+.wrapper div.panel{
+	background: #666;
+	border-right: 6px solid #ccc;
+	border-left: 6px solid #ccc;
+	padding: 0 18px;
+	color: #000;
+	max-height: 0;
+	overflow: hidden;
+	width: 98%;
+	margin: 0 auto;
+	transition: max-height .2s ease-out;
+	word-wrap:break-word;
+	padding: 0;
+	box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+}
+
+.logo{
+	margin-top: 50%;
+	position: relative;
+	border-right: 1vw solid grey;
+	border-radius: 20%;
+	width: 40%;
+	box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+	
+}
+
+.gauche {
+	width: calc(35% - 0.5em);
+	height: 100%;
+	float: left;
+
+}
+
+.droite {
+	border-left: 0.5em solid grey;
+	width: 65%;
+	height: 100%;
+	float: left;
+	background-color: #3d3d3d;
+	word-wrap:break-word;
+}
+
+.droite p{
+	margin-left: 6%;
+	width: 88%;
+	text-align: left;
+}
+
+.profiltext{
+	color: white;
+	font-family: "Open Sans";
+	font-size: 1vw;
+}
+
+.titre{
+	color: #999;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-family: "Alegreya Sans";
+	margin-top: 4%;
+	font-size: 1.2vw;
+}
+
+.edition{
+	color: #910202;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-family: "Alegreya Sans";
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-left: 6%;
+	float: left;
+	border: 0.2em solid #910202;
+	border-radius: 10%;
+	padding: 0.5% 2% 0.5% 2%;
+	box-shadow: 0 1px 16px rgba(0, 0, 0, .4);
+	background-color: #999;
+	font-size: 1.2vw;
+
+}
+
+.edition:hover{
+	transition: .4s;
+	border-radius: 40%;
+	border-color: #DD1C1A;
+	color: #DD1C1A;
+}
+
+.inputreqprofil{
+	background: transparent;
+	border-bottom: 0.2vw solid #910202; 
+	width: 50%;
+	border-top: transparent; 
+	border-left: transparent; 
+	border-right: transparent; 
+	color: #fff;
+	font-size: 1.2vw;
+}
+
+.namereqprofil{
+	color: #3d3d3d;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-family: "Alegreya Sans";
+	margin-top: 4%;
+	font-size: 1.4vw;
+}
+
+.last{
+	margin-bottom: 4%;
+}
